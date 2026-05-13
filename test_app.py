@@ -10,7 +10,7 @@ def client():
 def test_home(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert response.json['message'] == "Hello, CI/CD World!"
+    assert response.json['message'] == "Hello From Sonam's CI/CD World!"
 
 def test_health(client):
     response = client.get('/health')
